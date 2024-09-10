@@ -11,6 +11,7 @@
     <UserSecretsId>7e6895ea-0bf0-44ee-adfc-4912f83960a7</UserSecretsId>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
+    <PackageProjectUrl>https://localhost:44328/</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
