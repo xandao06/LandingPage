@@ -31,30 +31,34 @@ header {
 
 #nav_logo {
     font-size: 24px;
-    color: dodgerblue;
+    color: black;
 }
 
-#nav_list {
-    display: flex;
-    list-style: none;
-    gap: 48px;
-    
-}
+    #nav_logo span{
+        color: black;
+    }
 
-.nav-item a {
+    #nav_list {
+        display: flex;
+        list-style: none;
+        gap: 48px;
+    }
+
+.nav-item a{
+    color: #000000;
     text-decoration: none;
-    color: #1d1d1dad;
+    border-bottom: 3px solid #ffe100;
     font-weight: 600;
 }
 
 .nav-item.active a {
-    color: #1d1d1d;
+    text-decoration: none;
+    color: #000000;
     border-bottom: 3px solid #ffe100;
 }
 
 .btn-default {
     border: none;
-    display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ffcb45;
@@ -65,6 +69,10 @@ header {
     cursor: pointer;
     transition: background-color .3s ease;
 
+}
+
+.btn-default i{
+    display:flex;
 }
 
     .btn-default:hover {
@@ -82,6 +90,38 @@ header {
 }
 
 @media screen and (max-width: 1200px) {
+
+    #cta .description {
+        width:200%;
+    }
+
+    #home {
+        min-height: 100%;
+        padding-top: 0px;
+        width:100%;
+        justify-content:center;
+        align-items:center;
+    }
+
+        #banner{
+            display:none;
+        }
+
+        .shape{
+            display:none;
+        }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #mobile_nav_list a {
+        color: black;
+    }
+
+
     #nav_list, #navbar .btn-default {
         display: none;
 
@@ -96,9 +136,9 @@ header {
     }
 
     #mobile_menu.active {
+        
         display: flex;
         flex-direction: column;
-        
     }
 
     #mobile_nav_list {
@@ -112,6 +152,15 @@ header {
             list-style: none;
             text-align: center;
         }
+
+    #banner_produtos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+       /* .produto1{
+            width:0%;
+        }*/
 }
 
 #home {
@@ -123,7 +172,7 @@ header {
 
 
 #cta {
-    width: 40%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -207,7 +256,7 @@ header {
         box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
     }
 
-#banner {
+#shape {
     display: flex;
     align-items: start;
     justify-content: end;
@@ -224,47 +273,86 @@ header {
     z-index: 1;
 }
 
-#elgin_cel {
-    display:none;
-}
-
-@media screen and (max-width: 1200px) {
-    
-
-    #banner,
-    #elgin {
-        position: relative;
-        border-radius: 40% 30% 0% 20%;
-        flex-direction: column;
-    }
-
-    #cta{
-        width:100%;
-        text-align:center;
-        align-items:center;
-        display:none;
-    }
-}
-
 @media screen and (max-width: 450px) {
 
+    .shape{
+        display:none;
+    }
 
     #banner {
-        display: flex;
-        align-items: start;
-        justify-content: end;
-        height: 100%;
-        border-radius: 40% 30% 0% 20%;
-        top: 0;
-        right: 0;
+        display: none;
     }
 
     #elgin {
-        justify-content: end;
-        width: 350px;
-        z-index: 1;
+        display:none;
     }
+
+    
 }
 
 
+
+#produtos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#i9 {
+    width: 150px;
+}
+
+.section-title {
+    color: dodgerblue;
+    font-size: 1.5rem;
+    font-weight:600;
     
+}
+
+section-subtitle{
+    font-size: 3rem;
+}
+
+
+#banner_produtos {
+    width:150%;
+    display:flex;
+    justify-content:center;
+    gap:24px;
+    margin-top:32px;
+}
+
+.produto1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    border-radius:28px;
+    gap:18px;
+    width:60%;
+    padding:20px;
+    background-color:#ffffff;
+    box-shadow:0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position:relative;
+}
+
+.i9-description span {
+    text-align: center;
+}
+
+.detalhes {
+    text-decoration:underline;
+    font-weight:600;
+}
+
+.i9-price{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.comunicacao{
+    color:blue;
+    font-weight:600;
+}
