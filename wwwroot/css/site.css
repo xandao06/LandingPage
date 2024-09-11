@@ -158,9 +158,13 @@ header {
         justify-content: center;
     }
 
-       /* .produto1{
-            width:0%;
-        }*/
+    #catalogo {
+        white-space: nowrap;
+    }
+
+    #phone_button {
+        white-space: nowrap;
+    }
 }
 
 #home {
@@ -287,7 +291,31 @@ header {
         display:none;
     }
 
-    
+    #cta .title {
+        font-size: 3.5rem;
+        
+    }
+
+    #cta .title span {
+        font-size: 3rem;
+    }
+
+    #catalogo {
+        white-space: nowrap;
+    }
+
+    #phone_button {
+        white-space: nowrap;
+    }
+
+    #mobile_btn {
+        color:black;
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
 }
 
 
